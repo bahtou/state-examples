@@ -1,0 +1,8 @@
+.globalColor {
+  background-color: red;
+  display: grid;
+
+  & .cheese {
+    background-color: pink;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+        "debug": false,
+        "loose": false,
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "ie >= 11",
+            "firefox >= 45",
+            "chrome >= 50",
+            "edge >= 25",
+            "safari >= 10.10",
+            "ios >= 9",
+            "android >= 5.1"
+          ]
+        },
+        "useBuiltIns": "usage",
+        "corejs": { "version": 3, "proposals": true }
+    }],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime", {
+      "absoluteRuntime": false,
+      "corejs": 3,
+      "helpers": true,
+      "regenerator": true,
+      "useESModules": true
+    }],
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    "react-hot-loader/babel"
+  ]
+}
+
+// Plugins run before Presets.
+// Plugin ordering is first to last.
+// Preset ordering is reversed (last to first).
