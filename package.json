@@ -1,24 +1,24 @@
 {
-  "name": "app-trestle",
+  "name": "mini-react-app",
   "version": "1.0.0",
-  "description": "App Trestle is the barebones of a foundation to quickly start building your web application. Webpack serves as the trestle that supports your application's disparate technologies to give way to a rigid frame to which to build upon.",
+  "description": "minimalist react application w/ webpack",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahtou/app-trestle.git"
+    "url": "git+https://github.com/bahtou/mini-react-app.git"
   },
   "keywords": [
-    "trestle",
-    "webpack",
-    "foundation",
-    "bundler"
+    "mini",
+    "react",
+    "app",
+    "webpack"
   ],
   "author": "bahtou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bahtou/app-trestle/issues"
+    "url": "https://github.com/bahtou/mini-react-app/issues"
   },
-  "homepage": "https://github.com/bahtou/app-trestle#readme",
+  "homepage": "https://github.com/bahtou/mini-react-app#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -31,7 +31,7 @@
     "babel-loader": "^8.0.6",
     "case-sensitive-paths-webpack-plugin": "^2.2.0",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^2.1.1",
+    "css-loader": "^3.0.0",
     "error-overlay-webpack-plugin": "^0.3.0",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.13.0",
@@ -40,6 +40,7 @@
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
@@ -55,7 +56,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
     "@babel/runtime": "^7.4.5",
     "@hot-loader/react-dom": "^16.8.6",
     "core-js": "^3.1.3",

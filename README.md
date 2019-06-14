@@ -1,3 +1,13 @@
-# App Trestle
+# Minimalist React Application w/ Webpack
 
-Web applications arise from different technologies that converge to a singular product. Webpack serves as the trestle that supports your application's disparate technologies to give way to a rigid frame to which to build upon. App Trestle is the barebones of a foundation to quickly start building your web application. As the trestle of your applicatoin the foundation can be extended by adding any library that spans the webpack ecosystem.
+A minimalist React application starter with Webpack.  
+
+## CSS
+
+#### Normalizer.css
+
+[Current 8.0.1](https://github.com/necolas/normalize.css/blob/8.0.1/CHANGELOG.md)
+
+#### PostCSS
+
+#### SASS

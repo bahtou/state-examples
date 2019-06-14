@@ -1,12 +1,14 @@
 import './rhlConfig';
 
+import 'Styles/normalizer.css';
+import 'Styles/global.css';
+
 import React from 'react';
 import { render } from 'react-dom';
-import App from './App.js';
+import Root from './Root.js';
 
 
-const title = 'A minililbit of React & Webpack';
 render(
-  <App title={ title } />,
+  <Root />,
   document.getElementById('root-entry')
 );
