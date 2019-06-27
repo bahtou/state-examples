@@ -35,8 +35,7 @@ module.exports = {
   imagePathOutput: 'assets/images/[name].[hash:4].[ext]',
 
   jsPaths: [
-    path.resolve(__dirname, '..', `${appRoot}/App.js`),
-
+    path.resolve(__dirname, '..', `${appRoot}`),
     path.resolve(__dirname, '..', `${appRoot}/piperouter`),
     path.resolve(__dirname, '..', `${appRoot}/components`),
     path.resolve(__dirname, '..', `${appRoot}/configureStore.js`),

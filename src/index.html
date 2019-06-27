@@ -2,8 +2,17 @@
 <html lang="en-US">
   <head>
     <title>HTML + Webpack</title>
+    <style>
+      .root-entry {
+        display: grid;
+        grid-template-columns: auto [center] auto auto;
+        grid-template-rows: [header] auto [card] auto;
+        grid-row-gap: 50px;
+        padding-bottom: 50px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root-entry"></div>
+    <div id="root-entry" class="root-entry"></div>
   </body>
 </html>
