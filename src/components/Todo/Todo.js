@@ -1,9 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { toggleTodo } from '../../store/actions';
 
 
-const Todo = ({ todo, dispatch }) => {
+const Todo = ({ todo }) => {
+  const dispatch = useDispatch();
+
   const handleToggle = () => {
     dispatch(toggleTodo(todo.id));
   };
@@ -23,4 +25,4 @@ const Todo = ({ todo, dispatch }) => {
 };
 
 
-export default connect()(Todo);
+export default Todo;

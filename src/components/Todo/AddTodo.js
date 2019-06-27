@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addTodo } from '../../store/actions';
 
 
-function AddTodo({ dispatch }) {
+function AddTodo() {
   const [input, setInput] = useState('');
+  const dispatch = useDispatch();
 
   const handleAddTodo = () => {
     setInput(input);
@@ -24,4 +25,4 @@ function AddTodo({ dispatch }) {
 }
 
 
-export default connect()(AddTodo);
+export default AddTodo;
