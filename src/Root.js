@@ -1,8 +1,9 @@
 import { hot } from 'react-hot-loader/root';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Hx } from 'Elements';
 import Card from 'Components/Card';
+import TodoApp from 'Components/Todo';
 
 
 const headerStyles = {
@@ -19,7 +20,25 @@ const bodyStyles = {
   'alignItems': 'center'
 };
 
+const footerSyles = {
+  'gridColumn': 'center',
+  'gridRow': 'footer',
+  'display': 'flex',
+  'flexFlow': 'row nowrap',
+  'justifyContent': 'center'
+};
+
+const buttonStyles = {
+  'width': '300px',
+  'height': '50px',
+  'borderRadius': '30px',
+  'fontSize': '3em'
+};
+
+
 const Root = () => {
+  const [isVisible, setVisibility] = useState(false);
+
   return (
     <>
       <header style={headerStyles}>
@@ -27,9 +46,16 @@ const Root = () => {
         <Hx type="h1" style={{ 'margin': '0' }}>w/ Webpack</Hx>
       </header>
       <section style={bodyStyles}>
-        <Card />
+        {isVisible
+          ? <TodoApp />
+          : <Card />
+        }
       </section>
+      <footer style={footerSyles}>
+        <button style={buttonStyles} onClick={() => setVisibility(!isVisible)}>Todo App</button>
+      </footer>
     </>
+
   );
 };
 
