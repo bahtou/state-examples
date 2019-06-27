@@ -1,0 +1,52 @@
+.todo-app {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 2em;
+
+  h1 {
+    font-size: 5em;
+  }
+}
+
+/** add todo **/
+.add-todo {
+  display: flex;
+  flex-flow: row nowrap;
+
+  input {
+    width: 200px;
+    height: 50px;
+  }
+
+  button {
+    margin-left: 0.5rem;
+  }
+}
+
+/** todo list **/
+.todo-list {
+  margin-top: 1rem;
+  text-align: left;
+  list-style: none;
+}
+
+/** todo item **/
+.todo-item {
+  cursor: pointer;
+  line-height: 1.5;
+}
+.todo-item__text--completed {
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+/** visibility filters **/
+.filter {
+  padding: 0.3rem 0;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+.filter--active {
+  border-bottom: 1px solid black;
+}

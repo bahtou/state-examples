@@ -24,7 +24,7 @@ function Card() {
           <Hx type="h3">Web Development</Hx>
           <Tag style={{ 'alignSelf': 'end' }}>Front-end</Tag>
         </header>
-        <div className="react" style={{ 'marginBottom': '10px' }}>
+        <div className="react" style={{ 'marginBottom': '15px' }}>
           <div>
             <Ax src="https://reactjs.org/">
               <Hx type="h4" style={{ 'color': '#7da3e4' }}>ReactJS</Hx>

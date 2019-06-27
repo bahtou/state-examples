@@ -49,7 +49,18 @@
     "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
 
     "react/jsx-closing-bracket-location": [2, "after-props"],
-    "react/jsx-curly-spacing": [2, "always", {"spacing": { "allowMultiline": false, "objectLiterals": "never" }}],
+    "react/jsx-curly-spacing": [1, {
+      "when": "always",
+      "attributes": {
+        "allowMultiline": false,
+        "objectLiterals": "never"
+       },
+       "children": false,
+       "spacing": {
+        "allowMultiline": false,
+        "objectLiterals": "never"
+      }
+    }],
     "react/jsx-indent": [2, 2],
     "react/jsx-indent-props": [2, 2],
     "react/self-closing-comp": 2,
