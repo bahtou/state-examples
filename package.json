@@ -1,11 +1,11 @@
 {
-  "name": "mini-react-app",
+  "name": "state-examples",
   "version": "1.0.0",
-  "description": "minimalist react application w/ webpack",
+  "description": "Downtown ReactJS Meetup",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahtou/mini-react-app.git"
+    "url": "git+https://github.com/bahtou/state-examples.git"
   },
   "keywords": [
     "mini",
@@ -16,9 +16,9 @@
   "author": "bahtou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bahtou/mini-react-app/issues"
+    "url": "https://github.com/bahtou/state-examples/issues"
   },
-  "homepage": "https://github.com/bahtou/mini-react-app#readme",
+  "homepage": "https://github.com/bahtou/state-examples#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",

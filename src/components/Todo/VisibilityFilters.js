@@ -1,14 +1,10 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 import { setFilter } from '../../store/actions';
 import { VISIBILITY_FILTERS } from '../../constants';
-import { useStore } from './todoProvider';
 
 
-const VisibilityFilters = () => {
-  const { state, dispatch } = useStore();
-  const activeFilter = state.visibilityFilter;
-
+const VisibilityFilters = ({ activeFilter, dispatch }) => {
   return (
     <div className="visibility-filters">
       {Object.keys(VISIBILITY_FILTERS).map(filterKey => {
@@ -32,5 +28,12 @@ const VisibilityFilters = () => {
   );
 };
 
+const mapStateToProps = state => {
+  return {
+    activeFilter: state.visibilityFilter
+  };
+};
 
-export default VisibilityFilters;
+export default connect(
+  mapStateToProps
+)(VisibilityFilters);
