@@ -20,9 +20,5 @@ export const toggleTodo = id => {
   });
 };
 
-export const setFilter = filter => {
-  return ({
-    type: SET_FILTER,
-    payload: { filter }
-  });
-};
+
+export const setFilter = filter => ({ type: SET_FILTER, payload: { filter } });

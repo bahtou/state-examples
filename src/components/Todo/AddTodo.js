@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-
+import { connect } from 'react-redux';
 import { addTodo } from '../../store/actions';
-import { useStore } from './todoProvider';
 
 
-function AddTodo() {
-  const { dispatch } = useStore();
+function AddTodo({ dispatch }) {
   const [input, setInput] = useState('');
 
   const handleAddTodo = () => {
@@ -26,4 +24,4 @@ function AddTodo() {
 }
 
 
-export default AddTodo;
+export default connect()(AddTodo);
